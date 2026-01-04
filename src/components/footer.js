@@ -4,11 +4,11 @@ const footer = () => {
   return (
     <div>
          {/* Footer */}
-      <footer className="relative py-16 px-6 border-t border-white/10">
+      <footer style={{ backgroundColor: '#fbf0d8' }} className="relative py-16 px-6 border-t ">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-gray-500 text-sm">
-              © 2026 Your Name. All rights reserved.
+            <p>© 2026 Your Name. All rights reserved.</p> 
             </div>
             <div className="flex gap-6">
               {['Twitter', 'Instagram', 'Medium'].map((social) => (

@@ -83,21 +83,23 @@ export default function HomePage() {
           </div>
         ))}
 
-        {/* Carousel Navigation Dots */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex gap-3">
-          {slides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => goToSlide(idx)}
-              className={`transition-all duration-300 rounded-full ${
-                idx === currentSlide 
-                  ? 'w-12 h-3 bg-white' 
-                  : 'w-3 h-3 bg-white/50 hover:bg-white/70'
-              }`}
-              aria-label={`Go to slide ${idx + 1}`}
-            />
-          ))}
-        </div>
+        {/* Left Arrow */}
+        <button
+          onClick={() => goToSlide((currentSlide - 1 + slides.length) % slides.length)}
+          className="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white text-2xl transition-all duration-300 hover:bg-white/30 hover:scale-110"
+          aria-label="Previous slide"
+        >
+          ←
+        </button>
+
+        {/* Right Arrow */}
+        <button
+          onClick={() => goToSlide((currentSlide + 1) % slides.length)}
+          className="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white text-2xl transition-all duration-300 hover:bg-white/30 hover:scale-110"
+          aria-label="Next slide"
+        >
+          →
+        </button>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
@@ -113,7 +115,7 @@ export default function HomePage() {
       {/* Latest Creations Section */}
       <section className="py-24 px-6 md:px-12" style={{ backgroundColor: '#fbf0d8' }}>
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl md:text-6xl font-light mb-12 text-white">
+          <h2 className="text-5xl md:text-6xl font-light mb-12 text-[#b02a29]">
             Latest Creations
           </h2>
           
