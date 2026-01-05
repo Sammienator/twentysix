@@ -202,21 +202,21 @@ const ContactPage = () => {
             <div className="space-y-6">
               <div 
                 className="rounded-3xl p-8 shadow-xl cursor-pointer transition-all duration-300 hover:scale-105"
-                style={{ backgroundColor: '#191970' }}
+                style={{ backgroundColor: '#fbf0d8' }}
                 onClick={handleWhatsApp}
               >
                 <div className="flex items-center gap-6">
                   <div 
                     className="w-16 h-16 rounded-full flex items-center justify-center text-2xl"
-                    style={{ backgroundColor: '#25D366' }}
+                    style={{ backgroundColor: '#fbf0d8' }}
                   >
                     💬
                   </div>
                   <div>
-                    <h3 className="text-2xl font-light mb-2 text-white">
+                    <h3 className="text-2xl font-light mb-2 text-black">
                       WhatsApp
                     </h3>
-                    <p style={{ color: '#fbf0d8' }}>
+                    <p style={{ color: 'black' }}>
                       Chat with me instantly
                     </p>
                   </div>
@@ -225,7 +225,7 @@ const ContactPage = () => {
 
               <div 
                 className="rounded-3xl p-8 shadow-xl"
-                style={{ backgroundColor: 'white' }}
+                style={{ backgroundColor: 'fbf0d8' }}
               >
                 <h3 
                   className="text-2xl font-light mb-4"
@@ -259,30 +259,30 @@ const ContactPage = () => {
 
               <div 
                 className="rounded-3xl p-8 shadow-xl"
-                style={{ backgroundColor: '#191970' }}
+                style={{ backgroundColor: '#fbf0d8' }}
               >
-                <h3 className="text-2xl font-light mb-4 text-white">
+                <h3 className="text-2xl font-light mb-4 text-black">
                   Follow My Journey
                 </h3>
                 <div className="flex gap-4">
                   <a 
                     href="#b"
                     className="w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110"
-                    style={{ backgroundColor: '#fbf0d8', color: '#191970' }}
+                    style={{ backgroundColor: '#b02a29', color: '#191970' }}
                   >
                     <span className="text-xl">📘</span>
                   </a>
                   <a 
                     href="#b"
                     className="w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110"
-                    style={{ backgroundColor: '#fbf0d8', color: '#191970' }}
+                    style={{ backgroundColor: '#b02a29', color: '#191970' }}
                   >
                     <span className="text-xl">🐦</span>
                   </a>
                   <a 
                     href="#b"
                     className="w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110"
-                    style={{ backgroundColor: '#fbf0d8', color: '#191970' }}
+                    style={{ backgroundColor: '#b02a29', color: '#191970' }}
                   >
                     <span className="text-xl">📷</span>
                   </a>

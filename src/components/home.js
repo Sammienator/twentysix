@@ -136,37 +136,52 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Collections Grid */}
-      <section className="py-24 px-6 md:px-12" style={{ backgroundColor: '#fbf0d8' }}>
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-light text-center mb-20" style={{ color: '#191970' }}>
-            Explore Collections
-          </h2>
+     {/* Collections Grid */}
+<section className="py-24 px-6 md:px-12" style={{ backgroundColor: '#fbf0d8' }}>
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-5xl font-light text-center mb-20" style={{ color: '#191970' }}>
+      Explore Collections
+    </h2>
+    
+    <div className="grid md:grid-cols-3 gap-6">
+      {['Kikuyu Gems', 'Urban Echoes', 'For Everyone'].map((collection, idx) => (
+        <div 
+          key={idx}
+          className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105"
+        >
+          {/* Background Image */}
+          <img 
+            src={`https://images.unsplash.com/photo-${idx === 0 ? '1506905925346-21bda4d32df4' : idx === 1 ? '1514565131-fce0801e5785' : '1511818966892-d7d671e672a2'}?w=600&h=600&fit=crop`}
+            alt={collection}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
           
-          <div className="grid md:grid-cols-3 gap-6">
-            {['Kikuyu Gems', 'Urban Echoes', 'For Everyone'].map((collection, idx) => (
-              <div 
-                key={idx}
-                className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105"
-                style={{ backgroundColor: '#191970' }}
-              >
-                <div 
-                  className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300"
-                  style={{ backgroundColor: '#b02a29' }}
-                ></div>
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
-                  <h3 className="text-3xl font-light text-center mb-4 text-white">
-                    {collection}
-                  </h3>
-                  <div className="text-sm tracking-wider" style={{ color: '#fbf0d8' }}>
-                    {Math.floor(Math.random() * 10) + 3} poems
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/* Overlay */}
+          <div 
+            className="absolute inset-0 opacity-60 group-hover:opacity-40 transition-opacity duration-300"
+            style={{ backgroundColor: '#191970' }}
+          ></div>
+          
+          {/* Red hover effect */}
+          <div 
+            className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+            style={{ backgroundColor: '#b02a29' }}
+          ></div>
+          
+          {/* Content */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
+            <h3 className="text-3xl font-light text-center mb-4 text-white">
+              {collection}
+            </h3>
+            <div className="text-sm tracking-wider" style={{ color: '#fbf0d8' }}>
+              {Math.floor(Math.random() * 10) + 3} poems
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
     </div>
   );
 }
