@@ -38,31 +38,30 @@ const About = () => {
             
             {/* Text Content */}
             <div>
-              <h2 
-                className="text-5xl md:text-6xl font-light mb-8"
-                style={{ color: '#191970' }}
-              >
-                The Art of Now
-              </h2>
-              
-              <p 
-                className="text-lg leading-relaxed mb-6"
-                style={{ color: '#191970' }}
-              >
-                At the intersection of <span className="font-semibold" style={{ color: '#b02a29' }}>technology</span> and{' '}
-                <span className="font-semibold" style={{ color: '#b02a29' }}>emotion</span>, 
-                I explore the boundaries of contemporary poetry. Each verse is a digital brushstroke, 
-                painting the invisible emotions of our hyperconnected age.
-              </p>
-              
-              <p 
-                className="text-lg leading-relaxed mb-8"
-                style={{ color: '#191970' }}
-              >
-                My work weaves through themes of identity, connection, and the beautiful chaos 
-                of modern existence—transforming code into consciousness, pixels into poetry.
-              </p>
+       <h2 
+  className="text-5xl md:text-6xl font-light mb-8"
+  style={{ color: '#191970' }}
+>
+  Writing My Way Home
+</h2>
 
+<p 
+  className="text-lg leading-relaxed mb-6"
+  style={{ color: '#191970' }}
+>
+  I write because silence was never an option. Because there are stories living in my bones—
+  <span className="font-semibold" style={{ color: '#b02a29' }}>stories of mothers</span> and 
+  <span className="font-semibold" style={{ color: '#b02a29' }}>daughters</span>, of languages 
+  that carry worlds within them, of a city that pulses with both struggle and beauty.
+</p>
+
+<p 
+  className="text-lg leading-relaxed mb-8"
+  style={{ color: '#191970' }}
+>
+  My poetry is an excavation—digging through layers of culture, identity, and womanhood 
+  to find what's real. It's messy, honest, and unapologetically mine.
+</p>
               <a 
                 href="/contact"
                 className="inline-flex items-center gap-3 px-8 py-3 rounded-full text-white font-medium tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-xl group"

@@ -120,9 +120,9 @@ export default function HomePage() {
           </h2>
           
           <p className="text-xl md:text-2xl leading-relaxed mb-12 font-light" style={{ color: '#191970' }}>
-            Dive into a collection of verses that explore the depths of human experience, 
-            from the quiet whispers of dawn to the echoes that linger in forgotten spaces. 
-            Each poem is a journey—an invitation to pause, reflect, and feel.
+          Every poem here is a confession, a prayer, a rebellion. I write to make sense of heartbreak 
+  that has no name, joy that spills over, and the quiet revolutions happening inside us all. 
+  These words are my offering—proof that we are not alone in what we feel.
           </p>
 
           <a 
